@@ -10,7 +10,7 @@ class SwedbankBanklinkHandler extends GatewayHandler
 {
     public function getTransactionReference(Request $request) : string
     {
-        return $request->get('VK_REF', '');
+        return $request->get('VK_STAMP', '');
     }
 
     public function getPurchaseArguments(Transaction $transaction) : array
